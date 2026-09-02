@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks.Sources;
+﻿using System.ComponentModel;
+using System.Threading.Tasks.Sources;
 
 namespace AssignmentADVC_03
 {
@@ -84,6 +85,49 @@ namespace AssignmentADVC_03
             //{
             //    Console.WriteLine(entry);
             //}
+            #endregion
+            #region Exercise3
+            ////1-crrate phoneBook dictionary
+            //Dictionary<string, string> phoneBook = new Dictionary<string, string>();
+            //phoneBook.Add("esraa", "01234567540");
+            //phoneBook.Add("salma", "01123445564");
+            //phoneBook.Add("rawan", "01034456611");
+            //phoneBook.Add("rana", "01125567887");
+
+            ////2-add new contact with[]/update exist contact
+            //phoneBook["dina"] = "010045685432";
+            //phoneBook["esraa"] = "01146919543";
+
+
+            ////3-add duplicate key using add
+            //try
+            //{
+            //    phoneBook.Add("esraa", "01018357520");
+
+            //}
+            //catch (ArgumentException ex)
+            //{
+            //    Console.WriteLine($"\nError: {ex.Message}");
+
+            
+            //}
+
+            ////4-add duplicate key using TryAdd
+            //bool isAdded = phoneBook.TryAdd("esraa", "01018357520");
+            //Console.WriteLine($"\nAdding sucess:{isAdded}");
+
+            ////5-search contact not exist
+            //bool isExist = phoneBook.ContainsKey("khaled");
+            //Console.WriteLine($"\ncontact exist:{isExist}");
+
+            ////6-get contact with fallback not found
+            //bool isFound = phoneBook.TryGetValue("toqa", out string? phoneNumber);
+            //Console.WriteLine($"\ncontact found :{isFound}--phone number:{phoneNumber??"not found"}");
+
+            ////7- print keys and values in separated lines
+            //Console.WriteLine("\n");
+            //Console.WriteLine($"keys:{string.Join(", ", phoneBook.Keys)}");
+            //Console.WriteLine($"values:{string.Join(", ", phoneBook.Values)}");
             #endregion
         }
     }
