@@ -164,6 +164,35 @@ namespace AssignmentADVC_03
             //HashSet<int> isSubsetOf = new HashSet<int>() { 1, 2 };
             //Console.WriteLine($"IsSubset Of? : {isSubsetOf.IsSubsetOf(A)}");
             #endregion
+            #region Excercise5
+            //Queue<string> documents = new Queue<string>();
+            //documents.Enqueue("Report.pdf");
+            //documents.Enqueue("Invoice.pdf");
+            //documents.Enqueue("Letter.docx");
+            //documents.Enqueue("Resume.pdf");
+            //documents.Enqueue("Photo.jpg");
+
+            ////1-print queue and count 
+            //Console.WriteLine($"document = [{string.Join(",",documents)}]");
+            //Console.WriteLine($"count = {documents.Count}");
+
+            ////2-peek
+            //Console.WriteLine($"peek:{documents.Peek()}");
+
+            ////3-dequeue each document then print
+            //Console.WriteLine("\n dequeuing documents:");
+            //while (documents.Count > 0) 
+            //{
+            //   string document = documents.Dequeue();
+            //    Console.WriteLine($"printing : [{document}]");
+
+            //}
+
+            ////4-trydequeue on empty queue
+            //bool isDequeued = documents.TryDequeue(out string? dequeuedDocument);
+            //Console.WriteLine($"\ntry dequeue: {isDequeued}, document: {dequeuedDocument ?? "null"}");
+
+            #endregion
         }
 
     }
