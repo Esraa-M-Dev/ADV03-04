@@ -193,6 +193,34 @@ namespace AssignmentADVC_03
             //Console.WriteLine($"\ntry dequeue: {isDequeued}, document: {dequeuedDocument ?? "null"}");
 
             #endregion
+            #region Excercise6
+           // Stack<string> browserHistory = new Stack<string>();
+           // //1- push urls
+           // browserHistory.Push("google.com");
+           // browserHistory.Push("github.com");
+           // browserHistory.Push("stackoverflow.com");
+           // browserHistory.Push("youtube.com");
+           // browserHistory.Push("claude.ai");
+
+           // //2-peek 
+           // Console.WriteLine($"peek(top of stack):{browserHistory.Peek()}");
+
+           // //3- pop last 3 urls and print
+           // Console.WriteLine("\nPopping last 3 urls:");
+           //for(int i = 0; i < 3; i++)
+           // {
+           //     string leavingUrl = browserHistory.Pop();
+           //     Console.WriteLine($"leaving:{leavingUrl}");
+           // }
+
+           // //4-print current page after popping
+           // Console.WriteLine($"\ntop page after popping:{browserHistory.Peek()}");
+
+           // //5-trypop on empty stack
+           // browserHistory.Clear();
+           // bool isPopped = browserHistory.TryPop(out string? poppedUrl);
+           // Console.WriteLine($"\ntry pop: {isPopped}, url: {poppedUrl ?? "null"}");
+            #endregion
         }
 
     }
