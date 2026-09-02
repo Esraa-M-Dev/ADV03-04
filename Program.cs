@@ -109,7 +109,7 @@ namespace AssignmentADVC_03
             //{
             //    Console.WriteLine($"\nError: {ex.Message}");
 
-            
+
             //}
 
             ////4-add duplicate key using TryAdd
@@ -129,6 +129,45 @@ namespace AssignmentADVC_03
             //Console.WriteLine($"keys:{string.Join(", ", phoneBook.Keys)}");
             //Console.WriteLine($"values:{string.Join(", ", phoneBook.Values)}");
             #endregion
+            #region Excercise4
+            ////1-create hashset (ignore uppercase)
+            //HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+
+            ////2-add emails
+            //emails.Add("ahmed@test.com");
+            //emails.Add("AHMED@test.com");
+            //emails.Add("sara@test.com");
+            //emails.Add("Sara@Test.Com");
+
+            ////3-count
+            ////count should be 2 because HashSet ignores duplicates (case-insensitive)
+            //Console.WriteLine($"count : {emails.Count}");//2
+
+            ////4-set A& B
+            //HashSet<int> A = new HashSet<int>() { 1, 2, 3, 4, 5 };
+            //HashSet<int> B = new HashSet<int>() { 4, 5, 6, 7, 8 };
+
+            ////5-unionwith , intersectwith , exceptwith
+            //HashSet<int> union = new HashSet<int>(A);
+            //union.UnionWith(B);
+            //Console.WriteLine($"\nunion:{string.Join(",", union)}");
+
+            //HashSet<int> intersection = new HashSet<int>(A);
+            //intersection.IntersectWith(B);
+            //Console.WriteLine($"intersection:{string.Join(",", intersection)}");
+
+            //HashSet<int> difference = new HashSet<int>(A);
+            //difference.ExceptWith(B);
+            //Console.WriteLine($"difference:{string.Join(",", difference)}");
+
+            ////6-subset of
+            //HashSet<int> isSubsetOf = new HashSet<int>() { 1, 2 };
+            //Console.WriteLine($"IsSubset Of? : {isSubsetOf.IsSubsetOf(A)}");
+            #endregion
         }
+
     }
+
 }
+
+
