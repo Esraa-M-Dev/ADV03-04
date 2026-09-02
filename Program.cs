@@ -1,4 +1,6 @@
-﻿namespace AssignmentADVC_03
+﻿using System.Threading.Tasks.Sources;
+
+namespace AssignmentADVC_03
 {
     internal class Program
     {
@@ -46,6 +48,42 @@
 
 
 
+            #endregion
+            #region Exercise2
+            ////1-build leaderBoard dictionary
+            //SortedDictionary<int, string> leaderBoard = new SortedDictionary<int, string>();
+            //leaderBoard.Add(500, "Ahmed");
+            //leaderBoard.Add(200, "Sara");
+            //leaderBoard.Add(800, "Ali");
+            //leaderBoard.Add(350, "Mona");
+
+            ////2-print leadboard
+            //Console.WriteLine("leader board:");
+            //foreach (KeyValuePair<int,string> entry in leaderBoard)
+            //{
+            //    Console.WriteLine(entry);
+            //}
+
+            ////3-access first key and first value
+            //int firstKey = leaderBoard.Keys.First();   
+            //string firstValue = leaderBoard.Values.First();
+            //Console.WriteLine($"\nfirst key:{firstKey}--first value:{firstValue}");
+
+            ////4-check if score 500 exists
+            //Console.WriteLine($"\nscore 500 exists: {leaderBoard.ContainsKey(500)}");
+
+            ////5-safely get player of score 999
+            //bool scoreExists = leaderBoard.TryGetValue(999, out string? player);
+            //Console.WriteLine($"\nscore 999 exist: {scoreExists}"); 
+            //Console.WriteLine($"player of score 999: {player??"Null"}");
+
+            ////6-remove player with score 200
+            //leaderBoard.Remove(200);
+            //Console.WriteLine("\nleader board after removing :");
+            //foreach (KeyValuePair<int, string> entry in leaderBoard)
+            //{
+            //    Console.WriteLine(entry);
+            //}
             #endregion
         }
     }
